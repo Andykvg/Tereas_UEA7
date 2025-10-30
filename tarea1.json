@@ -1,0 +1,10 @@
+{
+    "partes": 
+        ["cabeza", "mano", "brazo", "pierna"],
+
+    "movimientos": 
+        ["girar", "saludar", "estirar", "patear"],
+
+    "lados": 
+    ["derecho", "izquierdo"]
+}

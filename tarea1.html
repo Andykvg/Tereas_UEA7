@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            font-size: medium;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1> Instrucciones Corporales</h1>
+    <div>
+        <p>El archivo json dice que: </p>
+    </div>
+    <div>
+        <p><span id="movimientos"></span></p>
+    </div>
+        <script>
+        fetch('tarea1.json')
+        .then (response => response.json())
+        .then (json => {
+            document.getElementById("movimientos").innerHTML=json.movimientos[0] +" "+ json.partes[2] + " " +  json.lados[1];
+            console.log(json);
+        })
+        </script>
+    
+</body>
+</html>
