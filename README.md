@@ -6,8 +6,18 @@ El objetivo de este repositorio es el de almacenar los distintos ejercicios y ta
 
 ## *Organización*
 La organización de este repositorio se maneja de la siguiente manera:
+
 * Carpeta
-  * Archivo
+
+La carpeta se nombra según el ejercicio o tarea que se asigna durante el eje tecnológico. Después, dentro de la carpeta se encuentran los archivos que se necesitan para hacer funcionar el proyecto; hasta el momento no se ha agregado una descripción de cada carpeta, pero se tiene contemplado para futuros trabajos, así como comentar cada código. Podemos decir que mayormente las carpetas contienen un archivo: html, css y un javascript, aunque recientemente se han trabajado con archivos json. 
+
+ * HTML: Es la base de todos los proyectos y se complementa con alguno de los demás archivos.
+
+	* CSS: Se utiliza como apoyo para el diseño de la página web.
+
+	* JavaScript: Genera interactividad con la web y ayuda agregando funciones dentro de la consola.
+
+	* Json: Cuenta con distintas funciones; sin embargo, actualmente es un recurso que nos apoya con la conexión con Supabase. 
 
 
 ## *Experiencia*
