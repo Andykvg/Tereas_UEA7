@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <script>
+        const { createClient } = supabase;
+        const supabaseUrl = 'https://vevjaiitacnggsrwgsrc.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZldmphaWl0YWNuZ2dzcndnc3JjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE2NTExODgsImV4cCI6MjA3NzIyNzE4OH0.vcmrAs42M010gxBpTupZlKc24Hc8wZqJU2UBE5Do_bc';
+        const supabaseClient = createClient(supabaseUrl, supabaseKey);
+
+        fetch('baseDatos.json')
+        .then (response => response.json())
+        .then (lista => {
+            console.log("Lista completa:", lista);
+           const parrafo = document.getElementById("mis libros");
+            parrafo.innerHTML = lista.map(item => `${item.num_libro} (${item.libro})`).join("<br>");
+        })
+
+    </script>
+    <style>
+        body{
+            background-color: rgb(120, 139, 159);
+            margin: 60px;
+        }
+    </style>
+
+    <h2>Libros para vaciones</h2>
+    <p id="mis libros">
+        Esta es mi base de datos de libros que tengo que leer en vacaciones:
+
+    </p>
+</body>
+</html>
